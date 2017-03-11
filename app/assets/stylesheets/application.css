@@ -11,5 +11,311 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require bootstrap.css
+ *= require style.css
+ *= require swipebox
  *= require_self
  */
+
+
+/*-- mail --*/
+.w3_mail_grids textarea{
+  outline: none;
+    padding: 10px;
+    color: #212121;
+    font-size: 14px;
+    border: none;
+    border-bottom:2px solid #f2f2f2;
+    background: none;
+    width: 97.3%;
+    margin:0 0 3em 1.1em;
+    min-height: 150px;
+    resize: none;
+  font-weight:600;
+}
+.w3_mail_grids textarea::-webkit-input-placeholder {
+  color: #212121 !important;
+}
+.w3_mail_grids input[type="submit"]{
+    outline: none;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 1em;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+    background: #44c7f4;
+    padding: 0.9em;
+    margin-top: 2em;
+}
+.w3_mail_grids input[type="submit"]:hover{
+ background:#008B8B;
+}
+
+/*-- mail --*/
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  width: calc(100% - 0em);
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;=
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #111;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+      font-weight: 600;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding:1.3em 0;
+  width: 100%;
+}
+/* Ichiro */
+.input--ichiro {
+  margin-top: 2em;
+}
+
+.input__field--ichiro {
+  position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 100;
+    display: block;
+    padding: 0 1em;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background: #fff;
+    color: #212121;
+    opacity: 0;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.input__label--ichiro {
+  width: 100%;
+  text-align: left;
+  cursor: text;
+}
+
+.input__label--ichiro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  border: 1px solid #e4e4e4;
+}
+
+.input__label-content--ichiro {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__field--ichiro:focus,
+.input--filled .input__field--ichiro {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.input__field--ichiro:focus + .input__label--ichiro,
+.input--filled .input__label--ichiro {
+  cursor: default;
+  pointer-events: none;
+}
+
+.input__field--ichiro:focus + .input__label--ichiro::before,
+.input--filled .input__label--ichiro::before {
+  -webkit-transform: scale3d(1, 1.5, 1);
+  transform: scale3d(1, 1.5, 1);
+  border: none;
+}
+
+.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
+.input--filled .input__label-content--ichiro {
+  -webkit-transform: translate3d(0, -2.9em, 0) scale3d(0.8, 0.8, 1);
+  transform:translate3d(0, -2.9em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+}
+.w3_agile_mail_grid textarea {
+    outline: none;
+    width: 100%;
+    background: #f5f5f5;
+    color: #111;
+    padding:1em;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+      min-height: 236px;
+     font-weight: 600;
+    margin: 2em 0 0;
+}
+.w3_agile_mail_grid textarea::-webkit-input-placeholder {
+  color: #212121 !important;
+}
+/*-- //mail --*/
+
+/*-- footer --*/
+.w3l_footer{
+  background: #000;
+  padding: 4em 0 3em 0;
+}
+.w3l_footer form{
+  width: 45%;
+  margin: 3em auto 0;
+}
+.w3ls_footer_grid {
+  margin: 0 auto;
+  text-align: center;
+}
+.w3ls_footer_grids p.agileits_w3layouts_est{
+  color:#fff;
+  line-height:2em;
+  margin:2em auto 5em;
+  margin: 0 auto;
+  text-align:center;
+}
+.w3ls_footer_grid_leftl{
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0 auto;
+}
+.w3ls_footer_grid_leftl span{
+  color: #fff;
+  font-size: 1em;
+  line-height: 2.1em;
+}
+.w3ls_footer_grid_leftr{
+  margin-top: 10px;
+}
+.w3ls_footer_grid_leftr h4{
+  font-size: 1.2em;
+  color: darkcyan;
+  letter-spacing: 3px;
+  margin-bottom: .5em;
+}
+.w3ls_footer_grid_leftr p{
+  color:#999;
+  line-height:1.5em;
+}
+.w3ls_footer_grid_leftr a{
+  color:#999;
+  text-decoration:none;
+  font-size:14px;
+}
+.w3ls_footer_grid_leftr a:hover{
+  color:#44c7f4;
+}
+.w3l_footer_pos{
+  margin-top: 4em;
+}
+.w3l_footer_pos p{
+  text-align:center;
+  color:#fff;
+  line-height:1.8em;
+}
+.w3l_footer_pos p a{
+  color:#44c7f4;
+  text-decoration:underline;
+}
+.w3l_footer_pos p a:hover{
+  color:#fff;
+}
+.agile_count_grid:hover .w3ls_footer_grid_leftl{
+  background:#fff;
+}
+.agile_count_grid:hover .w3ls_footer_grid_leftl span{
+  color:#212121;
+}
+.agile_count_grid:hover .w3ls_footer_grid_leftr h4{
+  color:#44c7f4;
+}
+.agile_count_grid {
+  float: left;
+  width: 33%;
+  padding: 15px;
+}
+
+
+
+#counter {
+  background-color: #f5f5f5;
+  min-height:350px;
+}
+.agile_count_grid {
+  text-align: center;
+}
+.agile_count_grid  h5 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0.5em 0;
+}
+p.counter {
+  font-size: 2em;
+  color:#fff;
+}
+.agile_count_grid span{
+  font-size:2em;
+  text-transform: uppercase;
+  color: #44c7f4;
+}
+.count {
+  padding-top: 7em;
+}
+
+
+.download-cv a{
+  line-height: 1em;
+  color: #008B8B;
+}
+

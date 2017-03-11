@@ -1,0 +1,415 @@
+/ banner
+#home.banner
+  .banner-info
+    .container
+      .col-md-4.header-left
+        = image_tag('ppic.jpg')
+      .col-md-8.header-right
+        %h2 Hello
+        %h1 I'm Narendra Garikapati
+        %h6 Ruby on Rails Developer
+        %ul.address
+          
+          %li
+            %ul.address-text
+              %li
+                %b PHONE
+              %li +91 9177761525
+          %li
+            %ul.address-text
+              %li
+                %b D.O.B
+              %li 14-8-1991
+          %li
+            %ul.address-text
+              %li
+                %b ADDRESS
+              %li Ameerpet, Hyderabad, Telangana, IN 500073.
+          %li
+            %ul.address-text
+              %li
+                %b E-MAIL
+              %li
+                %a{:href => "mailto:narendra99899@gmail.com"} narendra99899@gmail.com
+          %li
+            %ul.address-text
+              %li
+                %b WEBSITE
+              %li
+                %a{:href => "/"} www.narendragarikapati.com
+      .clearfix
+/ banner
+/ top-nav
+.top-nav.wow
+  .container
+    .navbar-header.logo
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        Menu
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      .menu
+        %ul.nav.navbar
+          %li
+            %a.scroll{:href => "#about"} About
+          %li
+            %a.scroll{:href => "#work"} Experience
+          %li
+            %a.scroll{:href => "#education"} Education
+          %li
+            %a.scroll{:href => "#skills"} Skills
+          %li
+            %a.scroll{:href => "#projects"} My Projects
+          %li
+            %a.scroll{:href => "#contact"} Contact
+        .clearfix
+/ top-nav
+/ about
+#about.about
+  .container
+    %h3.title About Me
+    .col-md-8.about-left
+      %p
+        Passionate and energetic web developer with around 3.5 years of experience in web application development and management. Worked on various types of applications and its needs, from small scale to large scale. Currently, I'm working for a project that web-based delivery management solution that helps with routing, tracking, and workflow management and delivers real-time updates on any driver’s location
+      %p
+        %b Career Highlights
+      %ul
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Design, develop and implement web applications that support day-to-day operations
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Develop technical solutions that definitively improve scalability, performance and profits
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Expert in Ruby on Rails development and object-oriented analysis
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Highly motivated, self confident and hardworking
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Good team player with excellent interpersonal skills
+        %li
+          %span.glyphicon.glyphicon-menu-right
+          Willingness to work in any environment,  Team spirit & always willing to learn
+    .col-md-4.about-right
+      %ul
+        %h5 Download CV
+        %li.text-center.download-cv
+          = link_to root_path do
+            %span.glyphicon.glyphicon-download
+            
+      .clearfix
+    .clearfix
+/ about
+
+/ work-experience
+#work.work
+  .container
+    %h3.title Work Experience
+    .work-info
+      .col-md-6.work-right.work-right2
+        %h4 2016 - Current
+      .col-md-6.work-left.work-left2
+        %h5
+          DispatchTrack Software Solutions Pvt. Ltd
+          %span.glyphicon.glyphicon-briefcase
+        %p Working as a Software Developer in DispatchTrack Software Solutions Pvt. Ltd, Hyderabad, from June, 2016 to till date
+      .clearfix
+    .work-info
+      .col-md-6.work-left
+        %h4 2014 - 2016
+      .col-md-6.work-right
+        %h5
+          %span.glyphicon.glyphicon-briefcase
+          RubyEffect Software Solutions Pvt. Ltd
+        %p Worked with RubyEffect Software Solutions Pvt. Ltd, Hyderabad, as a Software Developer from June, 2014 to June, 2016
+      .clearfix
+    .work-info
+      .col-md-6.work-right.work-right2
+        %h4 2013 - 2014
+      .col-md-6.work-left.work-left2
+        %h5
+          Capital soft labs(BookBusNow)
+          %span.glyphicon.glyphicon-briefcase
+        %p  Worked with Capital soft labs (bookbusnow) as Software Engineer, from March, 2013 to February, 2014
+      .clearfix
+/ work-experience
+
+/ education
+#education.education
+  .container
+    %h3.title Education
+    .work-info
+      .col-md-6.work-left
+        %h4 Bachelor of Technology - 2012
+      .col-md-6.work-right
+        %h5
+          %span.glyphicon.glyphicon-education
+          TRR Engineering College
+        %p Bachelor of Technology (Electronics & Communication Engineering) from TRR Engineering College affiliated to Jawaharlal Nehru Technological University, Hyderabad during 2008-2012 with 67.1%
+      .clearfix
+    .work-info
+      .col-md-6.work-right.work-right2
+        %h4 Intermediate - 2008
+      .col-md-6.work-left.work-left2
+        %h5
+          Krishnaveni Junior College
+          %span.glyphicon.glyphicon-education
+        %p Intermediate in M.P.C. from State Board of Intermediate Education A.P, from Krishnaveni Junior College during 2006-2008 with 77.8%
+      .clearfix
+    .work-info
+      .col-md-6.work-left
+        %h4 S.S.C - 2006
+      .col-md-6.work-right
+        %h5
+          %span.glyphicon.glyphicon-education
+          Z P High School
+        %p S.S.C. from the Board of Secondary School Education from ZP High School, Narnepadu during 2005 - 2006 with 64.2%
+      .clearfix
+/ education
+
+/ skills
+#skills.skills
+  .container
+    %h3.title Skills
+    .skills-info
+      .col-md-6.bar-grids
+        %h6
+          Ruby
+          /%span 80%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+        %h6
+          Ruby on Rails
+          /%span 70%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+        %h6
+          HTML, CSS, HAML and Bootstrap
+          /%span 95%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+        %h6
+          JavaScript
+          /%span 75%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          AngularJS 2
+          /%span 85%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          GitHub
+          /%span 95%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          Database: MySQL, PostgreSQL, Sqlite, MongoDB
+          /%span 80%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          Editors: Gedit, Sublime, Textmate
+          /%span 60%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          Operating Systems: UNIX (Linux, Ubuntu), Windows, Mac
+          /%span 60%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .col-md-6.bar-grids
+        %h6
+          Ajax and jQuery
+          /%span 60%
+        .progress
+          .progress-bar.progress-bar-striped.active{:style => "width: 100%"}
+      .clearfix
+/ education
+
+/ portfolio
+#projects.portfolio
+  .container
+    %h3.title.wow.zoomInLeft.animated{"data-wow-delay" => ".5s"} My Projects
+    / .sap_tabs
+    /   #horizontalTab{:style => "display: block; width: 100%; margin: 0px;"}
+    .resp-tabs-container
+      .tab-1.resp-tab-content
+        .tab_img
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g2.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g2.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid.effect-sarah
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g2.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g2.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g3.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g3.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g4.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g4.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g5.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g5.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g6.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g6.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g7.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g7.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g8.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g8.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .col-md-4.portfolio-grids
+            .grid
+              %a.swipebox{:href => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g9.jpg", :title => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non"}
+                %img.img-responsive{:alt => "", :src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/images/g9.jpg"}/
+                .figcaption
+                  %h3
+                    My
+                    %span Project
+                  %p Sarah likes to watch clouds. She's quite depressed.
+          .clearfix
+/ portfolio
+
+/ contact
+#contact.welcome.contact
+  .container
+    %h3.title Contact Us
+    .contact-row
+      .w3_mail_grids
+        %form{:action => "#", :method => "post"}
+          .col-md-6.w3_agile_mail_grid
+            %span.input.input--ichiro
+              %input#input-25.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "text"}/
+              %label.input__label.input__label--ichiro{:for => "input-25"}
+                %span.input__label-content.input__label-content--ichiro Your Name
+            %span.input.input--ichiro
+              %input#input-26.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "email"}/
+              %label.input__label.input__label--ichiro{:for => "input-26"}
+                %span.input__label-content.input__label-content--ichiro Your Email
+            %span.input.input--ichiro
+              %input#input-27.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "text"}/
+              %label.input__label.input__label--ichiro{:for => "input-27"}
+                %span.input__label-content.input__label-content--ichiro Your Phone Number
+          .col-md-6.w3_agile_mail_grid
+            %textarea{:name => "Message", :placeholder => "Your Message", :required => ""}
+            %input{:type => "submit", :value => "Submit"}/
+          .clearfix
+/ contact
+
+/ footer
+#counter.counter
+  .container
+    .count
+      .col-md-4.agile_count_grid
+        .w3ls_footer_grid_leftl
+          %span.glyphicon.glyphicon-map-marker{"aria-hidden" => "true"}
+        .w3ls_footer_grid_leftr
+          %h4 Location
+          %p Ameerpet, Hyderabad, Telangana, IN 500073
+        .clearfix
+      .col-md-4.agile_count_grid
+        .w3ls_footer_grid_leftl
+          %span.glyphicon.glyphicon-envelope{"aria-hidden" => "true"}
+        .w3ls_footer_grid_leftr
+          %h4 Email
+          %a{:href => "mailto:narendra99899@gmail.com"} narendra99899@gmail.com
+        .clearfix
+      .col-md-4.agile_count_grid.c3
+        .w3ls_footer_grid_leftl
+          %span.glyphicon.glyphicon-phone{"aria-hidden" => "true"}
+        .w3ls_footer_grid_leftr
+          %h4 Call Me
+          %p (+91) 9177761525
+        .clearfix
+      .clearfix
+.footer
+  .container
+    %p
+      © 2017 Narendra Garikapati. All rights reserved
+
+/ %script{:src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/js/jquery.swipebox.min.js"}
+%script{:src => "https://p.w3layouts.com/demos/may-2016/10-05-2016/my_resume/web/js/easyResponsiveTabs.js", :type => "text/javascript"}
+:javascript
+  $(document).ready(function() {
+  
+    var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear' 
+    };
+    
+    $().UItoTop({ easingType: 'easeOutQuart' });
+
+    $('#horizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion           
+      width: 'auto', //auto or any width like 600px
+      fit: true   // 100% fit in a container
+    });
+
+    jQuery(function($) {
+      $(".swipebox").swipebox();
+    });
+    
+  });
+
+/ Bootstrap core JavaScript
+= javascript_include_tag 'bootstrap'
+
+
