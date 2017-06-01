@@ -1,23 +1,14 @@
-#contact.welcome.contact
+#contact.contact
   .container
     %h3.title Contact Me
-    .contact-row
-      .contact_grids
-        %form{:action => "#", :method => "post"}
-          .col-md-6.contact_grid
-            %span.input.input--ichiro
-              %input#input-25.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "text"}/
-              %label.input__label.input__label--ichiro{:for => "input-25"}
-                %span.input__label-content.input__label-content--ichiro Your Name
-            %span.input.input--ichiro
-              %input#input-26.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "email"}/
-              %label.input__label.input__label--ichiro{:for => "input-26"}
-                %span.input__label-content.input__label-content--ichiro Your Email
-            %span.input.input--ichiro
-              %input#input-27.input__field.input__field--ichiro{:placeholder => " ", :required => "", :type => "text"}/
-              %label.input__label.input__label--ichiro{:for => "input-27"}
-                %span.input__label-content.input__label-content--ichiro Your Phone Number
-          .col-md-6.contact_grid
-            %textarea{:name => "Message", :placeholder => "Your Message", :required => ""}
-            %input{:type => "submit", :value => "Submit"}/
-          .clearfix
+    .agileits_agile_about_mail
+      = form_tag send_an_email_home_index_path, method: :post do
+        .col-md-6.about_mail_left
+          = text_field_tag :name, '', placeholder: "Name"
+          = email_field_tag :email, '', placeholder: "Email"
+          = text_field_tag :phone, '', placeholder: "Phone"
+        .col-md-6.about_mail_right
+          = text_area_tag :message, '', placeholder: "Message..."
+        .clearfix
+        .col-md-12
+          = submit_tag "Submit", class: 'pull-right'
