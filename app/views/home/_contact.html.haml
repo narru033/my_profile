@@ -2,13 +2,34 @@
   .container
     %h3.title Contact Me
     .agileits_agile_about_mail
-      = form_tag send_an_email_home_index_path, method: :post do
+      .message.text-center Something went wrong
+      = form_tag send_an_email_home_index_path, method: :post, remote: true do
         .col-md-6.about_mail_left
-          = text_field_tag :name, '', placeholder: "Name"
-          = email_field_tag :email, '', placeholder: "Email"
-          = text_field_tag :phone, '', placeholder: "Phone"
+          = text_field_tag :name, '', placeholder: "Name", required: true
+          = email_field_tag :email, '', placeholder: "Email", required: true
+          = text_field_tag :phone, '', placeholder: "Phone", required: true
         .col-md-6.about_mail_right
-          = text_area_tag :message, '', placeholder: "Message..."
+          = text_area_tag :message, '', placeholder: "Message...", required: true
         .clearfix
         .col-md-12
           = submit_tag "Submit", class: 'pull-right'
+
+:javascript
+  $(document).ready(function() {
+    $('form').submit(function() {  
+        var valuesToSubmit = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: valuesToSubmit,
+            dataType: "JSON"
+        }).success(function(data){
+            if (data.status){
+              $('.message').html("<span id='success_message'>"+ data.message +"</span>")
+            }
+            else {
+              $('.message').html("<span id='error_message'>"+ data.message +"</span>")
+            }
+        });
+    });
+  });

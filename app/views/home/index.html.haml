@@ -53,7 +53,7 @@
           %li
             %a.scroll{:href => "#projects"} My Projects
           %li
-            %a.scroll{:href => "#contact"} Contact
+            %a.scroll{:href => "#details"} Contact
           %li
             %a.scroll{:href => "#details"} Web
         .clearfix
@@ -62,7 +62,7 @@
 = render 'education'
 = render 'skills'
 = render 'projects'
-= render 'contact'
+=# render 'contact'
 #details.details
   .container
     .data
@@ -125,6 +125,6 @@
   });
 
 / Bootstrap core JavaScript
-= javascript_include_tag 'bootstrap'
+= javascript_include_tag 'bootstrap.js'
 
 

@@ -3,6 +3,6 @@ class UserMailer < ApplicationMailer
  
   def contact_me(data)
     @data = data
-    mail(to: @data.email, subject: 'Email from My Contact Page')
+    mail(to: "narendra99899@gmail.com", subject: 'Email from My Contact Page')
   end
 end
