@@ -34,7 +34,7 @@ gem 'simple_form'
 gem "haml-rails", "~> 0.9"
 
 # font-awesome
-gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 4.4.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
